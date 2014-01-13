@@ -21,7 +21,7 @@ Then identify the elements you want to be affected. Let's say...
 <div class="im"><img src="images/06.jpg" alt=""></div>
 ```
 
-Finally set the ImageFit in the 'window load' event. If you detect visual flips or white margins then try doing it in both, the 'document ready' and the 'window load' events. There might be more accurate events depending on how you apply the plugin.
+Finally set the ImageFit in the 'window load' event. If you detect visual flips or white margins then try doing it in both, the 'document ready' and the 'window load' events. There might be more accurate methods depending on how you apply the plugin.
 ``` javascript
 $(window).load(function() {
 	$('div.im').imagefit();
