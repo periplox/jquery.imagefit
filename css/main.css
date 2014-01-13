@@ -1,0 +1,183 @@
+body {
+	padding: 20px;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #666;
+}
+.a, .b, .c, .d, .e, .f, .g, .h, .i, .j, .k, .l, .m, .n, .o, .p, .q, .r, .s, .t, .u, .v, .w, .x, .y, .z {
+	display: none;
+	vertical-align: top;
+	width: 200px;
+	height: 141px;
+	margin-bottom: 5px;
+}
+a {
+	color: #000;
+	text-decoration: underline;
+}
+	a:hover {
+		color: #388B1E;
+		text-decoration: underline;
+	}
+a.dyd {
+	color: #6CEB00;
+	text-decoration: none;
+	font-weight:bold;
+	font-size:20px;
+}
+	a.dyd:hover {
+		color: #388B1E;
+	}
+h1 {
+	margin: 0 0 5px 0;
+	color: #388B1E;
+}
+	h1 span {
+		font-weight: normal;
+	}
+p {
+	display: inline-block;
+	vertical-align: top;
+	background-color: #388B1E;
+	padding: 5px;
+	color: white;
+	margin: 0 0 20px 0;
+	cursor: pointer;
+}
+	p strong {
+		color: #6CEB00;
+	}
+
+@media all and (max-width: 820px) {
+	div.txt {
+		width: 100%;
+		height: auto;
+		margin: 0 10px 20px 0;
+	}
+	#wrap {
+		position: relative; left:0; width:100%; top:0; height:100%;
+	}
+	#imgs {
+		width: 100%;
+		height: 600px;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+	}
+	a.fork, a.fork img {
+		width: 100px;
+	}
+	div.hide {
+		display: none;
+	}
+	div#cHide {
+		display: none;
+		margin-top: 20px;
+	}
+	div#cShow {
+		display: block;
+		margin-top: 20px;
+	}
+
+}
+@media all and (min-width: 820px) {
+	div.txt {
+		display: inline-block;
+		vertical-align: top;
+		width: 18%;
+		min-width: 155px;
+		height: auto;
+		margin: 0 10px 20px 0;
+	}
+	#wrap {
+		display: inline-block;
+		vertical-align: top;
+		position:relative; left:0; width:78%; top:0; height:100%;
+	}
+	#imgs {
+		width: 100%;
+		height: 600px;
+		overflow: hidden;
+	}
+	div.hide {
+		display: block;
+	}
+	div#cHide {
+	display: block;
+	margin-top: 30px;
+	}
+	div#cShow {
+		display: none;
+	}
+}
+.wide {
+	width: 90%;
+}
+
+fieldset {
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+	margin: 0 0 20px 0;
+	border: 0;
+	min-width: 83px;
+}
+
+
+pre {
+	background: #ddd;
+	border: 1px solid #ccc;
+	margin: 0;
+	padding: 7px;
+	overflow-y: auto;
+	font-size: 11px;
+}
+pre span {
+	color: red;
+}
+label {
+	font-weight: bold;
+	color: #388B1E;
+}
+img.thumb {
+	max-width: 60px;
+	max-height: 50px;
+}
+aside {
+	font-size: 11px;
+	padding: 10px;
+	background: #BEF785;
+}
+
+
+/*Imagefit + Cycle 2*/
+.demo2 {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+div.cycle-slideshow {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+#opts {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	z-index: 9999;
+	background: rgba(255, 255, 255, 0.7);
+	padding: 15px;
+	width: 200px;
+}
+ #opts span {
+ 	font-weight: bold;
+ 	color: #388B1E;
+ 	display: block;
+ }

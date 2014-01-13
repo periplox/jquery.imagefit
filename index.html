@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQ ImageFit</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/shCore.css" />
+	<link rel="stylesheet" type="text/css" href="css/shThemeDefault.css" />
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script>
+		function refresh() {
+			$('.c_mod').html("'"+$('#mode').val()+"'");
+			$('.c_hal').html($('#halign').val());
+			$('.c_val').html("'"+$('#valign').val()+"'");
+			$('.c_for').html("'"+$('#force').val()+"'");
+		}
+
+		$(function() {
+			$('#imgs').attr('src', 'ajax.html');
+
+			$('select, input').change(function() {
+				refresh();
+				$('#imgs').attr('src', 'ajax.html');
+			});
+		});
+
+	</script>
+</head>
+<body>
+	<a class="fork" href="https://github.com/periplox"><img style="position: absolute; z-index: 999; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+	<div class="txt">
+		<h1>jQuery ImageFit <span>demo</span></h1>
+		<p onclick="document.location.href='https://github.com/periplox?tab=repositories';">by <strong>Periplo</strong></p>
+		<br>
+		A simple, lightweight plugin to make images fit anywhere and anyway.
+		<br><br>
+		<a href="https://github.com/periplox/jquery.fadeloader" target="_blank" class="dyd">DOWNLOAD & DOCS</a>
+		<br><br>
+		
+		<fieldset>	
+			<label>Mode:</label><br>
+			<select id="mode" class="wide" value="outside">
+				<option selected value="outside">outside</option>
+				<option value="inside">inside</option>
+			</select>
+		</fieldset>
+
+		<fieldset>	
+			<label>Force size:</label><br>
+			<select id="force" class="wide" value="true">
+				<option selected value="true">true</option>
+				<option value="false">false</option>
+			</select>
+		</fieldset>
+		
+		<fieldset>
+			<label>Hor. align:</label><br>
+			<select id="halign" class="wide">
+				<option value="left">left</option>
+				<option selected value="center">center</option>
+				<option value="right">right</option>
+			</select>
+		</fieldset>
+		
+		<fieldset>
+			<label>Vert. align:</label><br>
+			<select id="valign" class="wide">
+				<option value="top">top</option>
+				<option selected value="middle">middle</option>
+				<option value="bottom">bottom</option>
+			</select>
+		</fieldset>
+
+		
+		<div class="hide">
+		<label>Resulting code:</label><br>
+<pre>
+$(<span>'div'</span>).imagefit({
+	mode: <span class="c_mod">'otside'</span>,
+	force : <span class="c_for">'true'</span>,
+	halign : <span class="c_hal">'center'</span>,
+	valign : <span class="c_val">'middle'</span>
+});
+</pre>	
+		</div>
+		
+		<div id="cHide">
+			<label>OTHER DEMOS & USES:</label><br><br>
+			<a href="fullscreen.php" target="_blank">Fullscreen responsive slideshow (Cycle 2 + Imagefit)</a><br><br>
+			<a href="mosaic.html" target="_blank">Fullscreen responsive mosaic</a><br><br>
+
+			<br><br>
+
+			<aside>
+				<strong>CREDITS</strong>: 
+				Cycle 2 is a <a href="http://jquery.malsup.com/">Malsup</a> plugin
+				<br>
+				All the images are published under Creative Commons licenses. From left to right and top to bottom:
+				pic 1 by <a href="http://www.flickr.com/photos/jcurtis/">J. Curtis</a>,
+				pic 2 by <a href="http://www.flickr.com/photos/anthony-la-fourmi/">Anthony Aceldy</a>,
+				pic 3 by <a href="http://www.flickr.com/photos/37990980@N04/">Uilian Aranha</a>,
+				pic 4 by <a href="http://www.flickr.com/photos/arielst0rm7/">Debbie Ding</a>,
+				pic 5 by <a href="http://www.flickr.com/photos/nicbr/">NIC Brasil</a>,
+				pic 6 by <a href="http://www.flickr.com/photos/insectman/">by Insectman</a>.
+			</aside>
+		</div>
+
+	</div>
+		
+	<div id="wrap">
+		<iframe src="ajax.html" height="600" frameborder="0" id="imgs" scrolling="auto"></iframe>
+	</div>
+	
+	<div id="cShow">
+			<label>OTHER DEMOS & USES:</label><br><br>
+			<a href="fullscreen.php" target="_blank">Fullscreen responsive slideshow (Cycle 2 + Imagefit)</a><br><br>
+			<a href="mosaic.html" target="_blank">Fullscreen responsive mosaic</a><br><br>
+
+			<br><br>
+
+			<aside>
+				<strong>CREDITS</strong>: 
+				Cycle 2 is a <a href="http://jquery.malsup.com/">Malsup</a> plugin
+				<br>
+				All the images are published under Creative Commons licenses. From left to right and top to bottom:
+				pic 1 by <a href="http://www.flickr.com/photos/jcurtis/">J. Curtis</a>,
+				pic 2 by <a href="http://www.flickr.com/photos/anthony-la-fourmi/">Anthony Aceldy</a>,
+				pic 3 by <a href="http://www.flickr.com/photos/37990980@N04/">Uilian Aranha</a>,
+				pic 4 by <a href="http://www.flickr.com/photos/arielst0rm7/">Debbie Ding</a>,
+				pic 5 by <a href="http://www.flickr.com/photos/nicbr/">NIC Brasil</a>,
+				pic 6 by <a href="http://www.flickr.com/photos/insectman/">by Insectman</a>.
+			</aside>
+		</div>
+
+</body>
+</html>

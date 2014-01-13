@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ImageFit beta</title>
+	<style>
+		body, html {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		ul {
+			width: 100%;
+			height: 100%;
+			margin: auto;
+			padding: 0;
+			list-style: none;
+		}
+		li {
+			width: 25%;
+			height: 25%;
+			margin: 0;
+			padding: 0;
+			border: 0;
+			outline: none;
+			list-style: none;
+			display: inline-block;
+			vertical-align: top;
+		}
+	</style>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.imagefit.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('li').imagefit();
+
+			$(window).resize(function(){
+				$('li').imagefit({
+					mode : 'outside',
+					valign : 'middle',
+					halign : 'center'
+				});
+			});
+		});
+
+		$(window).load(function(){
+			$('li').imagefit();
+		});
+	</script>
+</head>
+<body>
+
+	<ul>
+		<li><img src="images/01.jpg" alt=""></li><!--
+		--><li><img src="images/02.jpg" alt=""></li><!--
+		--><li><img src="images/03.jpg" alt=""></li><!--
+		--><li><img src="images/04.jpg" alt=""></li><!--
+		--><li><img src="images/05.jpg" alt=""></li><!--
+		--><li><img src="images/06.jpg" alt=""></li><!--
+		--><li><img src="images/01.jpg" alt=""></li><!--
+		--><li><img src="images/02.jpg" alt=""></li><!--
+		--><li><img src="images/03.jpg" alt=""></li><!--
+		--><li><img src="images/04.jpg" alt=""></li><!--
+		--><li><img src="images/05.jpg" alt=""></li><!--
+		--><li><img src="images/06.jpg" alt=""></li><!--
+		--><li><img src="images/01.jpg" alt=""></li><!--
+		--><li><img src="images/02.jpg" alt=""></li><!--
+		--><li><img src="images/03.jpg" alt=""></li><!--
+		--><li><img src="images/04.jpg" alt=""></li>
+	</ul>
+	
+</body>
+</html>
