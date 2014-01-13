@@ -1,0 +1,38 @@
+{
+    "name": "imagefit",
+    "title": "jQuery Imagefit",
+    "description": "A simple, lightweight plugin to make images fit anywhere and anyway.",
+    "keywords": [
+        "images",
+        "image",
+        "fitting",
+        "overflow",
+        "gallerie"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Periplo",
+        "url": "https://github.com/periplox"
+    },
+    "maintainers": [
+        {
+            "name": "Periplo",
+            "email": "periplox@gmail.com",
+            "url": "https://github.com/periplox"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://www.opensource.org/licenses/MIT"
+        }
+    ],
+    "bugs": "https://github.com/periplox/jquery.imagefit/issues",
+    "homepage": "https://github.com/periplox/jquery.imagefit",
+    "docs": "https://github.com/periplox/jquery.imagefit/blob/master/README.md",
+    "demo": "http://periplox.github.io/jquery.imagefit",
+    "download": "https://github.com/periplox/jquery.imagefit/blob/master/jquery.imagefit.js",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
