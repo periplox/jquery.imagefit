@@ -3,6 +3,8 @@ jQuery ImageFit 1.0.0
 
 A simple, lightweight plugin to make images fit anywhere and anyway.
 
+##Demo: [right here](http://periplox.github.io/jquery.imagefit/)
+
 ##Usage
 
 Fist include the required files.
