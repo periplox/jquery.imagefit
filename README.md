@@ -29,6 +29,25 @@ $(window).load(function() {
 	$('div.im').imagefit();
 });
 ```
+
+##Ignoring images
+
+You can choose to ignore certain images, by defining a class name to use. This is especially helpful if using gallery thumbnails in jQuery Cycle2.
+``` html
+<img src="images/01.jpg" alt="" class="ignore">
+<img src="images/02.jpg" alt="">
+```
+
+``` javascript
+$('.cycle-slideshow').imagefit({
+    ignore: '.ignore',
+    mode: mode,
+    force : 'true',
+    halign : 'center',
+    valign : 'middle'
+});
+```
+
 And that would be it.
 
 ##Reference

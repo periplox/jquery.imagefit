@@ -15,6 +15,7 @@
 		//Public vars
 		var html = $('html');
 		html.data('main', this);
+		html.data('ignore', opts.ignore);
 		html.data('mode', opts.mode);
 		html.data('hor', opts.halign);
 		html.data('ver', opts.valign);
@@ -31,7 +32,7 @@
 		html.data('main').css('position', 'relative');
 
 		//Look for imgs
-		html.data('main').find('img').each(function() {
+		html.data('main').find('img:not(' + html.data('ignore') + ')').each(function() {
 			var img = $(this);
 				img.css('position', 'absolute');
 			var iw = $(this).width();
@@ -172,7 +173,6 @@
 					img.width(nw); img.height(nh);
 					img.css('width', nw); img.css('height', nh);
 				}
-				else {}
 			});
 			
 		});
@@ -183,6 +183,7 @@
 
 
 	$.fn.imagefit.defaults = {
+		ignore  : '', // Class name.
 		mode	: 'outside', // 'inside'
 		halign	: 'center', // 'left', 'right'
 		valign	: 'middle', // 'top', 'bottom'
