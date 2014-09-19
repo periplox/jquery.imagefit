@@ -7,7 +7,7 @@ A simple, lightweight plugin to make images fit anywhere and anyway.
 
 ##Usage
 
-Fist include the required files.
+First, include the required files:
 ``` html
 <script src='//code.jquery.com/jquery-1.10.2.min.js'></script>
 <script src='jquery.imagefit.js'></script>
