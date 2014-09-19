@@ -61,6 +61,13 @@ And that would be it.
     <th>Description</th>
  </tr>
 
+<tr>
+    <td>ignore</td>
+    <td>string</td>
+    <td>''</td>
+    <td>Takes a class name to use. e.g. '.ignore'.</td>
+ </tr>
+
  <tr>
     <td>mode</td>
     <td>string</td>
