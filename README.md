@@ -7,7 +7,7 @@ A simple, lightweight plugin to make images fit anywhere and anyway.
 
 ##Usage
 
-Fist include the required files.
+First, include the required files:
 ``` html
 <script src='//code.jquery.com/jquery-1.10.2.min.js'></script>
 <script src='jquery.imagefit.js'></script>
@@ -29,6 +29,25 @@ $(window).load(function() {
 	$('div.im').imagefit();
 });
 ```
+
+##Ignoring images
+
+You can choose to ignore certain images, by defining a class name to use. This is especially helpful if using gallery thumbnails in jQuery Cycle2.
+``` html
+<img src="images/01.jpg" alt="" class="ignore">
+<img src="images/02.jpg" alt="">
+```
+
+``` javascript
+$('.cycle-slideshow').imagefit({
+    ignore: '.ignore',
+    mode: mode,
+    force : 'true',
+    halign : 'center',
+    valign : 'middle'
+});
+```
+
 And that would be it.
 
 ##Reference
@@ -40,6 +59,13 @@ And that would be it.
     <th>Type</th>
     <th>Default</th>
     <th>Description</th>
+ </tr>
+
+<tr>
+    <td>ignore</td>
+    <td>string</td>
+    <td>''</td>
+    <td>Takes a class name to use. e.g. '.ignore'.</td>
  </tr>
 
  <tr>
