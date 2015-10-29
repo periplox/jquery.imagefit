@@ -105,5 +105,26 @@ And that would be it.
     <td>true</td>
     <td>Force resizing, even when image real size is smaller than container's.</td>
  </tr>
+ 
+ <tr>
+    <td>onStart</td>
+    <td>function</td>
+    <td></td>
+    <td>Function to be executed on start event.</td>
+ </tr>
+
+ <tr>
+    <td>onLoad</td>
+    <td>function</td>
+    <td></td>
+    <td>Function to be executed on load event.</td>
+ </tr>
+
+ <tr>
+    <td>onError</td>
+    <td>function</td>
+    <td></td>
+    <td>Function to be executed on error.</td>
+ </tr>
 
 </table>
