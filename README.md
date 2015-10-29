@@ -37,6 +37,7 @@ You can choose to ignore certain images, by defining a class name to use. This i
 <img src="images/01.jpg" alt="" class="ignore">
 <img src="images/02.jpg" alt="">
 ```
+##Options
 
 ``` javascript
 $('.cycle-slideshow').imagefit({
@@ -46,13 +47,13 @@ $('.cycle-slideshow').imagefit({
     halign : 'center',
     valign : 'middle',
     onStart: function (index, container, imagecontainer) {
-	/* Your code here */
+	/* Some code */
     },
     onLoad: function (index, container, imagecontainer) {
-    	/* Your code here */
+    	/* Some code */
     },
     onError: function (index, container, imagecontainer) {
-	/* Your code here */
+	/* Some code */
     }
 });
 ```
