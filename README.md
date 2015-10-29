@@ -44,7 +44,16 @@ $('.cycle-slideshow').imagefit({
     mode: mode,
     force : 'true',
     halign : 'center',
-    valign : 'middle'
+    valign : 'middle',
+    onStart: function (index, container, imagecontainer) {
+	/* Your code here */
+    },
+    onLoad: function (index, container, imagecontainer) {
+    	/* Your code here */
+    },
+    onError: function (index, container, imagecontainer) {
+	/* Your code here */
+    }
 });
 ```
 
