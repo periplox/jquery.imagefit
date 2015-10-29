@@ -1,4 +1,4 @@
-jQuery ImageFit 1.0.0
+jQuery ImageFit 1.0.2
 =====================
 
 A simple, lightweight plugin to make images fit anywhere and anyway.
